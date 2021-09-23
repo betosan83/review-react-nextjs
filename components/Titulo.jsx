@@ -2,7 +2,6 @@ import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 
 export default function Titulo(props) {
 
-    
         return props.pequeno ? (
             <>
                 <p>{props.principal}</p>
@@ -13,6 +12,5 @@ export default function Titulo(props) {
                 <h1>{props.principal}</h1>
                 <h2>{props.secundario}</h2>
             </>
-        )
-    
+        ) 
 }
