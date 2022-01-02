@@ -1,7 +1,7 @@
-function gerarLista() {
+function gerarLista(final = 10) {
     const lista = []
-    for(let i = 1; i <= 10; i++) {
-        lista.push( <span>{i}</span>)
+    for(let i = 1; i <= final; i++) {
+        lista.push( <span>{i + ', '}</span>)
     }
     return lista
 }
@@ -9,7 +9,7 @@ function gerarLista() {
 export default function lista() {
     return (
         <div>
-            {gerarLista()}
+            {gerarLista(30)}
         </div>
     )
 }
